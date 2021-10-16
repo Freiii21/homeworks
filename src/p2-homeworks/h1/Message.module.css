@@ -1,49 +1,72 @@
 .message {
     display: grid;
     grid-template-areas:
-        'avatar name name'
-        'avatar text time';
-    grid-template-columns: 70px 300px 50px;
-    grid-template-rows: 35px 1fr;
-    margin: 10px;
+        'avatar corner container';
+    grid-template-columns: 67px 25px 350px;
+    grid-template-rows: 1fr;
+    padding: 5px 0px 5px 20px;
+    background-color: aliceblue;
 }
 
 .avatar {
     grid-area: avatar;
-    grid-gap: 10px;
     align-self: end;
+
 }
 
 .avatar img {
-    width:60px;
-    border: 1px solid;
-    border-radius: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+.corner1 {
+    grid-area: corner;
+    background-color: darkslategrey;
+    height: 25px;
+    align-self: end;
+}
+
+.corner2 {
+    grid-area: corner;
+    background-color: aliceblue;
+    height: 25px;
+    align-self: end;
+    border-radius: 0 0 100% 0;
+}
+
+.container {
+    grid-area: container;
+    background-color: darkslategrey;
+    display: grid;
+    grid-template-areas:
+            'name name'
+            'text time';
+    grid-template-columns: 9fr 1.5fr;
+    grid-template-rows: 25px 1fr;
+    padding: 10px 10px 0px 20px;
+    border-radius: 15px 15px 15px 0px;
 }
 
 .name {
     grid-area: name;
-    padding-left: 15px;
-    padding-top: 10px;
-    background-color: darkslategrey;
-    color: chocolate;
+    color: gold;
     font-weight: bold;
 }
 
 .text {
     grid-area: text;
-    padding-left: 15px;
-    padding-left: 15px;
-    padding-right: 3px;
-    padding-bottom: 10px;
-    background-color: darkslategrey;
+    font-style: italic;
     color: aliceblue;
+    padding-bottom: 10px;
 }
 
 .time {
     grid-area: time;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 5px;
-    background-color: darkslategrey;
     color: darkgrey;
+    font-size: 18px;
+    padding-bottom: 5px;
 }
+
