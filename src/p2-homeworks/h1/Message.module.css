@@ -1,3 +1,49 @@
 .message {
+    display: grid;
+    grid-template-areas:
+        'avatar name name'
+        'avatar text time';
+    grid-template-columns: 70px 300px 50px;
+    grid-template-rows: 35px 1fr;
+    margin: 10px;
+}
 
+.avatar {
+    grid-area: avatar;
+    grid-gap: 10px;
+    align-self: end;
+}
+
+.avatar img {
+    width:60px;
+    border: 1px solid;
+    border-radius: 40px;
+}
+
+.name {
+    grid-area: name;
+    padding-left: 15px;
+    padding-top: 10px;
+    background-color: darkslategrey;
+    color: chocolate;
+    font-weight: bold;
+}
+
+.text {
+    grid-area: text;
+    padding-left: 15px;
+    padding-left: 15px;
+    padding-right: 3px;
+    padding-bottom: 10px;
+    background-color: darkslategrey;
+    color: aliceblue;
+}
+
+.time {
+    grid-area: time;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    background-color: darkslategrey;
+    color: darkgrey;
 }
