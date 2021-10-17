@@ -1,10 +1,11 @@
 import React from 'react'
 import Message from './Message';
+
 const messageData = {
     avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJopYxo3lmx46T7LV_tkb0RajZ_-OEReZgFA&usqp=CAU',
     name: 'Scooter',
-    message: 'How much is the Fish? How much is the Fish? How much is the Fish? How much is the Fish? How much is the Fish? How much is the Fish? How much is the Fish? How much is the Fish? How much is the Fish?',
-    time: '22:00',
+    message: 'How much is the Fish?',
+    time: '23:59',
 }
 
 function HW1() {
