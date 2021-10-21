@@ -1,9 +1,9 @@
 import React from 'react'
 import Affair from './Affair'
-import {AffairType} from './HW2'
+import {AffairType, FilterType} from './HW2'
 
 type AffairsPropsType = { // need to fix any
-    data: any
+    data: (affairs:Array<AffairType>, filter:FilterType) => void
     setFilter: any
     deleteAffairCallback: any
 }
