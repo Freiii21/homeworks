@@ -1,3 +1,61 @@
-.someClass {
+.line {
+    display: grid;
+    grid-template-columns: 138px 75px 30px;
+    grid-template-rows: 25px;
+    margin: 3px 0px 0px 12px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 7px;
+    width: 258px;
+    border-color: darkgrey;
+    background-color: cornsilk;
+}
 
+.name {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.high {
+    color: gold;
+}
+
+.line input {
+    width: 15px;
+    height: 15px;
+    margin: 4px 0px 0px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.filterField {
+    margin-left: 11px;
+    margin-top: 5px;
+}
+
+.filterAll, .filterHigh, .filterMiddle, .filterLow {
+    margin-right: 9.5px;
+    padding: 2px;
+    width: 60px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.filterAll {
+    background-color: dimgray;
+    color: white;
+}
+
+.filterHigh {
+    background-color: crimson;
+}
+
+.filterMiddle {
+    background-color: orangered;
+}
+
+.filterLow {
+    background-color: orange;
 }
