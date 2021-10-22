@@ -64,6 +64,8 @@
     /*font-style: italic;*/
     color: aliceblue;
     padding-bottom: 10px;
+    max-width: 200px;
+    word-wrap: break-word;
 }
 
 .time {

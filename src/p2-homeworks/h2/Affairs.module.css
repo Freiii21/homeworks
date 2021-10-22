@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 138px 75px 30px;
     grid-template-rows: 25px;
-    margin: 3px 0px 0px 12px;
+    margin: 4px 0px 0px 12px;
     border: 1px solid;
     border-radius: 5px;
     padding-left: 7px;
@@ -17,7 +17,19 @@
 }
 
 .high {
-    color: gold;
+    color: crimson;
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+.middle {
+    color: orangered;
+    font-weight: bold;
+}
+.low {
+    color: orange;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 .line input {
@@ -30,7 +42,7 @@
 
 .filterField {
     margin-left: 11px;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 .filterAll, .filterHigh, .filterMiddle, .filterLow {
@@ -48,14 +60,30 @@
     color: white;
 }
 
+.filterAll:focus {
+    text-decoration: underline;
+}
+
 .filterHigh {
     background-color: crimson;
+}
+
+.filterHigh:focus {
+    text-decoration: underline;
 }
 
 .filterMiddle {
     background-color: orangered;
 }
 
+.filterMiddle:focus {
+    text-decoration: underline;
+}
+
 .filterLow {
     background-color: orange;
+}
+
+.filterLow:focus {
+    text-decoration: underline;
 }

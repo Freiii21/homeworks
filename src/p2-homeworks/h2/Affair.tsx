@@ -18,7 +18,7 @@ function Affair(props: AffairPropsType) {
             <div className={s.name}>
                 {props.affair.name}
             </div>
-            <div className={`${s} ${props.affair.priority}`}>
+            <div className={s[props.affair.priority]}>
                 {props.affair.priority}
             </div>
             <div>
