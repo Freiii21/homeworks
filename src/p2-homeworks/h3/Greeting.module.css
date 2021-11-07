@@ -1,7 +1,40 @@
 .someClass {
+    border: 1px solid black;
+    border-radius: 7px;
+    color: darkblue;
+    background-color: lightgreen;
+    margin-right: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    height: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button {
+    height: 28px;
+    width: 45px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
 
+.number {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-left: 5px;
+    height: 30px;
+    vertical-align: -2px;
+}
+
+.someClassError {
+    border: 1px solid red;
+    background-color: lightpink;
 }
 
 .error {
-    border: 1px solid red;
+    color: red;
+    margin-left: 10px;
 }
