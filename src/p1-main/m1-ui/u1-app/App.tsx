@@ -9,8 +9,7 @@ import HW5 from '../../../p2-homeworks/h5/HW5';
 function App() {
     return (
         <div className={s.App}>
-            <div>React</div>
-            <div>homework 1</div>
+            <img src={"https://s3.tproger.ru/uploads/2016/10/reactmini.png"} className={s.title}/>
             {/*<HW1/>*/}
             {/*<HW2/>*/}
             {/*<HW3/>*/}

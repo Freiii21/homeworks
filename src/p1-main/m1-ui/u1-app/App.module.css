@@ -1,3 +1,10 @@
 .App {
     background-color: ghostwhite;
 }
+
+.title {
+    height: 45px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 25px;
+}

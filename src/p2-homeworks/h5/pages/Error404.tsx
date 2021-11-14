@@ -2,10 +2,8 @@ import React from 'react'
 
 function Error404() {
     return (
-        <div>
-            <div>404</div>
-            <div>Page not found!</div>
-            <div>—ฅ/ᐠ.̫ .ᐟ\ฅ—</div>
+        <div style={{width: '1366px', margin: 'auto'}}>
+            <img src={'https://valorouswebdesign.com/wp-content/uploads/2019/07/Custom-404-Page-AS-107153871.jpg'}/>
         </div>
     )
 }

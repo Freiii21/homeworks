@@ -12,6 +12,7 @@ function HW1() {
     return (
         <div>
             <hr/>
+            <div style={{marginLeft: "12px", fontStyle:"italic"}}>homework 1</div>
             <Message
                 avatar={messageData.avatar}
                 name={messageData.name}
@@ -22,7 +23,7 @@ function HW1() {
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}
-            <hr/>
+            {/*<hr/>*/}
         </div>
     )
 }
