@@ -2,6 +2,7 @@ import React from 'react'
 import {NavLink} from 'react-router-dom';
 import {PATH} from './RoutesComp'
 import s from './Header.module.css'
+import hamburger from '../../assets/images/hamburger.png'
 
 function Header() {
 
@@ -15,7 +16,7 @@ function Header() {
                 <NavLink to={PATH.JUNIOR_PLUS}
                          className={({isActive}) => (isActive ? `${s.activeClass} ${s.links}` : s.links)}>Junior+ </NavLink>
             </div>
-            <img src={'https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4135.png'} className={s.icon}/>
+            <img src={hamburger} className={s.icon}/>
         </div>
     )
 }

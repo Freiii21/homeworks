@@ -1,8 +1,9 @@
 import React from 'react'
 import Message from './Message';
+import scooter from '../../assets/images/scooter.jpg'
 
 const messageData = {
-    avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJopYxo3lmx46T7LV_tkb0RajZ_-OEReZgFA&usqp=CAU',
+    avatar: scooter,
     name: 'Scooter',
     message: 'How much is the Fish?',
     time: '23:59',

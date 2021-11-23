@@ -1,6 +1,7 @@
 import React from 'react'
 import {AffairType} from './HW2';
 import s from './Affairs.module.css'
+import garbage from '../../assets/images/garbage.png'
 
 type AffairPropsType = {
     // key не нужно типизировать
@@ -23,7 +24,7 @@ function Affair(props: AffairPropsType) {
             </div>
             <div>
                 <input onClick={deleteCallback} type="image"
-                       src="https://e7.pngegg.com/pngimages/977/950/png-clipart-computer-icons-delete-text-rectangle-thumbnail.png"/>
+                       src={garbage}/>
             </div>
         </div>
     )

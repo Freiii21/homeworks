@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './App.module.css'
+import reactLogo from '../../../assets/images/reactLogo.jpg'
 import HW1 from '../../../p2-homeworks/h1/HW1'
 import HW2 from '../../../p2-homeworks/h2/HW2'
 import HW3 from '../../../p2-homeworks/h3/HW3'
@@ -9,7 +10,7 @@ import HW5 from '../../../p2-homeworks/h5/HW5';
 function App() {
     return (
         <div className={s.App}>
-            <img src={"https://s3.tproger.ru/uploads/2016/10/reactmini.png"} className={s.title}/>
+            <img src={reactLogo} alt='logo' className={s.title}/>
             {/*<HW1/>*/}
             {/*<HW2/>*/}
             {/*<HW3/>*/}
