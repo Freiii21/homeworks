@@ -1,0 +1,21 @@
+.title {
+    margin-left: 12px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.buttons {
+    margin-left: 9px;
+    margin-top: 5px;
+}
+
+.superSpan {
+    margin-left: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.superSpan img {
+    width: 15px;
+    margin-right: 5px;
+}
