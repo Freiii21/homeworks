@@ -1,18 +1,11 @@
 import React from 'react'
 
-// import HW7 from '../../h7/HW7'
+import HW7 from '../../h7/HW7'
 
 function Junior() {
     return (
         <div>
-            <p style={{
-                fontSize: '50px',
-                fontWeight: 'bold',
-                marginLeft: "30px",
-                color: "green",
-            }}> -- Junior Page --</p>
-
-            {/*<HW7/>*/}
+            <HW7/>
         </div>
     )
 }

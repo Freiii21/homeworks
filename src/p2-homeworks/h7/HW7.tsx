@@ -8,9 +8,9 @@ function HW7() {
     const [value, onChangeOption] = useState(arr[1])
 
     return (
-        <div>
+        <div style={{marginLeft: '12px'}}>
             <hr/>
-            homeworks 7
+            <div style={{fontStyle: 'italic', marginBottom: '10px'}}>homeworks 7</div>
 
             {/*should work (должно работать)*/}
             <div>
@@ -29,7 +29,7 @@ function HW7() {
                 />
             </div>
 
-            <hr/>
+            {/*<hr/>*/}
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperSelect/>*/}
             {/*<AlternativeSuperRadio/>*/}
