@@ -26,9 +26,9 @@ function HW8() {
     const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
 
     return (
-        <div>
+        <div style={{marginLeft: '12px'}}>
             <hr/>
-            homeworks 8
+            <div style={{fontStyle: 'italic', marginBottom: '10px'}}>homeworks 8</div>
 
             {/*should work (должно работать)*/}
             {finalPeople}
@@ -37,7 +37,7 @@ function HW8() {
             <div>sort down</div>
             check 18
 
-            <hr/>
+            {/*<hr/>*/}
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativePeople/>*/}
             <hr/>
