@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
-import {brotliCompress} from 'zlib';
 
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0)
@@ -25,12 +24,12 @@ function Clock() {
         setShow(false);
     }
 
-    const stringTime = date?.toLocaleTimeString() || <br/>
+    const stringTime = date?.toLocaleTimeString() || <div>Click start...</div>
     const stringDate = date?.toLocaleDateString() || <br/>
 
     return (
         <div>
-            <div style={{marginLeft: '10px',marginBottom:"10px",fontWeight:"bold", color:"green",width:"85px"}}>
+            <div style={{marginLeft: '10px',marginBottom:"10px",fontWeight:"bold", color:"green",width:"100px"}}>
                 <div
                     onMouseEnter={onMouseEnter}
                     onMouseLeave={onMouseLeave}
