@@ -29,8 +29,8 @@ function HW6() {
                 />
             </div>
             <div className={s.buttons}>
-                <SuperButton onClick={save}>save</SuperButton>
-                <SuperButton onClick={restore}>restore</SuperButton>
+                <SuperButton onClick={save} style={{backgroundColor:"cadetblue", borderColor:"white"}}>save</SuperButton>
+                <SuperButton onClick={restore} style={{backgroundColor:"cadetblue", borderColor:"white"}}>restore</SuperButton>
             </div>
 
             {/*<hr/>*/}
