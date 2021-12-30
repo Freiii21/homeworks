@@ -29,7 +29,7 @@ function HW10() {
                     <div>
                         <SuperButton style={{
                             width: '120px', backgroundColor: 'darkgrey', color:"blueviolet",
-                            borderColor: 'white', fontWeight: 'lighter'
+                            borderColor: 'blueviolet', fontWeight: 'lighter'
                         }} onClick={setLoading}>set loading...</SuperButton>
                     </div>
                 )

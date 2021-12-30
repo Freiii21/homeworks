@@ -7,9 +7,9 @@ function HW11() {
     const [value2, setValue2] = useState(100)
 
     return (
-        <div>
+        <div style={{marginLeft: '12px'}}>
             <hr/>
-            homeworks 11
+            <div style={{fontStyle: 'italic', marginBottom: '10px'}}>homeworks 11</div>
 
             {/*should work (должно работать)*/}
             <div>
