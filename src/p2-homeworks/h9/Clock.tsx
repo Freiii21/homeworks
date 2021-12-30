@@ -47,8 +47,8 @@ function Clock() {
                 )}
             </div>
 
-            <SuperButton onClick={start} style={{backgroundColor:"snow"}}>start</SuperButton>
-            <SuperButton onClick={stop} style={{backgroundColor:"snow"}}>stop</SuperButton>
+            <SuperButton onClick={start} style={{backgroundColor:"khaki"}}>start</SuperButton>
+            <SuperButton onClick={stop} style={{backgroundColor:"khaki"}}>stop</SuperButton>
 
         </div>
     )

@@ -1,33 +1,48 @@
 import React, {useState} from 'react'
 import SuperRange from './common/c7-SuperRange/SuperRange'
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
+import s from './HW11.module.css'
 
 function HW11() {
-    const [value1, setValue1] = useState(0)
-    const [value2, setValue2] = useState(100)
+    const [value1, setValue1] = useState(50)
+    const [value2, setValue2] = useState(75)
+
+    const onChangeRange = (value:number) => {
+        setValue1(value);
+    }
+
+    const onChangeRange2 = (value: [number, number]) => {
+        if(value[0] !== value1){
+            setValue1(value[0]);
+        }
+        if(value[1] !== value2){
+            setValue2(value[1]);
+        }
+    }
 
     return (
-        <div style={{marginLeft: '12px'}}>
+        <div className={s.common}>
             <hr/>
-            <div style={{fontStyle: 'italic', marginBottom: '10px'}}>homeworks 11</div>
+            <div className={s.title}>homeworks 11</div>
 
-            {/*should work (должно работать)*/}
-            <div>
-                <span>{value1}</span>
+            <div className={s.inputField}>
+                <span className={s.value1_1}>{value1}</span>
                 <SuperRange
-                    // сделать так чтоб value1 изменялось
+                    onChangeRange={onChangeRange}
+                    value1={value1}
                 />
             </div>
 
-            <div>
-                <span>{value1}</span>
+            <div className={s.inputField}>
+                <span className={s.value1_2}>{value1}</span>
                 <SuperDoubleRange
-                    // сделать так чтоб value1 и value2 изменялось
+                    value={[value1,value2]}
+                    onChangeRange={onChangeRange2}
                 />
-                <span>{value2}</span>
+                <span className={s.value2}>{value2}</span>
             </div>
 
-            <hr/>
+            {/*<hr/>*/}
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperRange/>*/}
             {/*<AlternativeSuperDoubleRange/>*/}

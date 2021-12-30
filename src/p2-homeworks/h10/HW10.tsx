@@ -29,7 +29,7 @@ function HW10() {
                     <div>
                         <SuperButton style={{
                             width: '120px', backgroundColor: 'darkgrey', color:"blueviolet",
-                            borderColor: 'blueviolet', fontWeight: 'lighter'
+                            borderColor: 'blueviolet', fontWeight: 'bold'
                         }} onClick={setLoading}>set loading...</SuperButton>
                     </div>
                 )
@@ -38,7 +38,7 @@ function HW10() {
             {/*<hr/>*/}
             {/*для личного творчества, могу проверить*/}
             {/*<Alternative/>*/}
-            <hr/>
+            {/*<hr/>*/}
         </div>
     )
 }

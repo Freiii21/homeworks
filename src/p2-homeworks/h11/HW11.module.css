@@ -1,0 +1,29 @@
+.common {
+    margin-left: 12px;
+}
+
+.title {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.inputField {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 190px;
+}
+
+.value1_1 {
+    width: 30px;
+}
+
+.value1_2 {
+    width: 50px;
+}
+
+.value2 {
+    margin-left: 10px;
+    width: 30px;
+    text-align: right;
+}
