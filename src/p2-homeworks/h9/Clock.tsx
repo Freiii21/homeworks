@@ -33,11 +33,9 @@ function Clock() {
                 <div
                     onMouseEnter={onMouseEnter}
                     onMouseLeave={onMouseLeave}
-
                 >
                     {stringTime}
                 </div>
-
                 {show ? (
                     <div>
                         {stringDate}
@@ -46,10 +44,8 @@ function Clock() {
                     <br/>
                 )}
             </div>
-
             <SuperButton onClick={start} style={{backgroundColor:"khaki"}}>start</SuperButton>
             <SuperButton onClick={stop} style={{backgroundColor:"khaki"}}>stop</SuperButton>
-
         </div>
     )
 }
