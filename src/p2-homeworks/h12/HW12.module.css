@@ -1,23 +1,32 @@
+.common{
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
 .dark {
     background: dimgrey;
 }
-
 .dark-text {
     color: aliceblue;
+    font-style: italic;
 }
 
 .red {
     background: lightcoral;
 }
-
 .red-text {
     color: aqua;
+    font-style: italic;
 }
 
 .some {
     background: lightgreen;
 }
-
 .some-text {
     color: darkslateblue;
+    font-style: italic;
+}
+.settingName{
+    font-weight: bold;
+    text-decoration: underline;
+    margin-right: 15px;
 }

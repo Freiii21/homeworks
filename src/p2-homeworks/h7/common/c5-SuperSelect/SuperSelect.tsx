@@ -14,7 +14,6 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
         ...restProps
     }
 ) => {
-    debugger
     const mappedOptions: any[] = options ? options.map((el,i) => <option
         key={i}
         value={el}
