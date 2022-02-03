@@ -1,5 +1,7 @@
 import React, {ChangeEvent, useState} from 'react';
 import {RequestAPI} from './api/RequestAPI';
+import SuperButton from '../../h4/common/c2-SuperButton/SuperButton';
+import SuperCheckbox from '../../h4/common/c3-SuperCheckbox/SuperCheckbox';
 
 export const Request = () => {
     const [status, setStatus] = useState(false);
@@ -9,7 +11,7 @@ export const Request = () => {
         const value = e.currentTarget.checked;
         setStatus(value);
     }
-    const onClickButton = (status: boolean) => {
+    const onClickButton = () => {
         RequestAPI.sendRequest(status)
             .then(res => {
                 const newResponse1 = res.data.errorText;
@@ -25,8 +27,11 @@ export const Request = () => {
 
     return (
         <div>
-            <button onClick={() => onClickButton(status)}>Send request</button>
-            <input type="checkbox" checked={status} onChange={(e) => onChangeCheckbox(e)}/>
+            {/*<button onClick={() => onClickButton(status)}>Send request</button>*/}
+            <SuperButton onClick={onClickButton}
+                         style={{backgroundColor:"darkcyan", width:"120px", marginBottom:"10px"}}
+            >Send request</SuperButton>
+            <SuperCheckbox checked={status} onChange={onChangeCheckbox}/>
             <div>{response[0]}</div>
             <div>{response[1]}</div>
         </div>
