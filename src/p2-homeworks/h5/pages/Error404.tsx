@@ -1,9 +1,11 @@
 import React from 'react'
+import pageNotFound from './../../../assets/images/404.png'
+import s from './Error404.module.css'
 
 function Error404() {
     return (
-        <div style={{width: '1366px', margin: 'auto'}}>
-            <img src={'https://valorouswebdesign.com/wp-content/uploads/2019/07/Custom-404-Page-AS-107153871.jpg'}/>
+        <div className={s.common}>
+            <img src={pageNotFound} className={s.image}/>
         </div>
     )
 }

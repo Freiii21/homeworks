@@ -1,0 +1,10 @@
+.common {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    border: 1px solid black;
+    border-radius: 5px;
+}
